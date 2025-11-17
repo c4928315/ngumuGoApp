@@ -1,0 +1,116 @@
+/* ===== GLOBAL PAGE STYLING ===== */
+body {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* Center the form */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.signup-wrapper {
+  width: 360px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.07);
+}
+
+/* ===== LOGO TEXT ===== */
+.logo {
+  color: #cc5f00;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* ===== TOGGLE SECTION ===== */
+/* Hide the default checkbox */
+.toggle-wrapper input {
+  display: none;
+}
+
+/* Toggle background */
+.toggle {
+  width: 46px;
+  height: 24px;
+  background: #d26a1a;
+  border-radius: 30px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* White circle */
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;        /* circle starts on the left */
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+
+/* When toggle is ON */
+.toggle-wrapper input:checked + .toggle::before {
+  transform: translateX(22px);  /* slide circle to right */
+}
+.toggle-wrapper input:checked + .toggle {
+  background: #4caf50;  /* change background color when ON */
+}
+/* ===== SECTION HEADER ===== */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* ===== INPUT STYLING ===== */
+input {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 18px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #cc5f00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b95600;
+}
+
+/* ===== BOTTOM TEXT ===== */
+.bottom-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.bottom-text a {
+  color: #cc5f00;
+  text-decoration: none;
+  font-weight: 500;
+}
