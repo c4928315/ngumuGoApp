@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NgumuGO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style=" width: 100%; display:block">
+    <div style="width: 90%; margin:auto">
+            <h1 class="logo">LOGO</h1>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <p>Are you a vendor? <p>
+        <label class="toggle-wrapper">
+            <input type="checkbox" id="customerToggle">
+            <span class="toggle"></span>
+        </label>
+    </div>
+
+
+    <p><strong>Vendor Sign Up</strong></p>
+    <form action="/register" method="post">
+        <!-- <label for="business name">Business Name:</label><br> -->
+        <input type="text" id="Business" name="Business" placeholder="Business Name" required><br><br>
+
+        <!-- <label for="phone">Phone Number:</label><br> -->
+        <input type="numbers" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+
+        <!-- <label for="password">Password:</label><br> -->
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+        <!-- <label for="confirmPassword">Confirm Password:</label><br> -->
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required><br><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <p style="text-align: center;">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <footer>
+        <!-- Footer for additional info or links -->
+        <!-- Add copyright or contact info here if needed -->
+    </footer>
+</body>
+
+</html>
